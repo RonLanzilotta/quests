@@ -1,4 +1,11 @@
-const quotes = [
+
+export type Quote = {
+    text: string,
+    author: string,
+    tags: string[]
+}
+
+export const quotes: Quote[] = [
     {
         text: `Hope springs eternal in the human breast:\nMan never is, but always to be blest.`,
         author: 'Alexander Pope',
@@ -265,5 +272,3 @@ const quotes = [
         tags: ['personality', 'wisdom', 'life']
     },
 ]
-
-export default quotes
